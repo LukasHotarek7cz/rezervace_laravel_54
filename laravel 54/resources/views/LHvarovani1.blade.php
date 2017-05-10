@@ -1,31 +1,8 @@
 
-<style>
-div.DivCLerror1{
-	color:red;
-	background-color:#eeeeee;
-}
-div.DivCLerror1:onclick{
-	display:none;
-}
-div.DivCLerror1 div{
-}
-</style>
-<script>
-
-
-</script>
-
-<div class=DivCLerror1 >
-<div>
-
-<?= $error1 ?><br>
-
 @if(count($errors))
-	@foreach($errors->all() as $e1)
-		<?= $e1 ?>
-	@endforeach
+	<div style="background-color:red; color:black; padding:3px;" >
+		@foreach($errors->all() as $e1)
+			<?= $e1 ?>
+		@endforeach
+	</div>
 @endif
-
-</div>
-</div>
-

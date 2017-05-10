@@ -4,6 +4,7 @@
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+
 		<!--
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
@@ -19,28 +20,50 @@
 	</head>
 	<body>
 
-	@include("LHvarovani1")
-
 	<table class="tab1" >
 		<thead>
+		<caption></caption>
 		<tr><td colspan= 5><h1>Rezervace</h1></td></tr>
+		<tr><td colspan= 5>@include("LHvarovani1")</td></tr>
 		<tr>
 			<form method=POST id=FoGetIDFormular1 >
 			<?= csrf_field() ?>
 			<th>
 				<input
 					 type="datetime-local"
-					 name="ittnDatum1"
-					 value="<?= $odchoziFormular2['datum1'] ?>"
+					 name="Datum"
+					 value="<?= $odchoziFormular1['datum1'] ?>"
 					 min="<?= date('Y-m-d').'T'.(date('H')+1).':00:00' ?>"
 					 required>
 				</input>
 			</td>
-			<th><input type=text name=ittnNazev1 max=20 placeholder="nazev" value="<?= $odchoziFormular2['nazev1'] ?>" required></input></td>
-			<th><input type=text name=ittnPoznamka1 max=20 placeholder="poznamka" value="<?= $odchoziFormular2['poznamka1'] ?>" ></input></td>
-			<th><input type=number name=ittnTelefon1 placeholder="telefon" value="<?= $odchoziFormular2['telefon1'] ?>" min=0 required></input></td>
-			<input type=hidden name=ittnMod1 value="<?= $odchoziFormular2['mod1'] ?>" ></input>
-			<input type=hidden name=ittnDatum2 value="<?= $odchoziFormular2['datum2'] ?>" ></input>
+			<th>
+				<input type=text
+				 name="Název"
+				 max=20
+				 placeholder="nazev"
+				 value="<?= $odchoziFormular1['nazev1'] ?>"
+				 required >
+				</input>
+			</td>
+			<th>
+				<input type=text
+				 name="Poznámka"
+				 max=20
+				 placeholder="poznamka"
+				 value="<?= $odchoziFormular1['poznamka1'] ?>" >
+				</input>
+			</td>
+			<th>
+				<input type=number
+				 name="Telefon"
+				 min=0
+				 placeholder="telefon"
+				 value="<?= $odchoziFormular1['telefon1'] ?>"
+				 required ></input>
+			</td>
+			<input type=hidden name="Mod" value="<?= $odchoziFormular1['mod1'] ?>" ></input>
+			<input type=hidden name="PuvodníDatum" value="<?= $odchoziFormular1['datum2'] ?>" ></input>
 			<th><input type=submit value="REZERVOVAT"></input></td>
 			</form>
 		</tr>

@@ -43,5 +43,18 @@ function fAOnClUpravit1(aDatum1, aMod2)
 
 }
 
+/*
 
+
+//spusteni po nacteni dokumentu
+$(document).ready(function(){
+	$("*").
+	
+
+
+});
+
+
+
+*/
 
