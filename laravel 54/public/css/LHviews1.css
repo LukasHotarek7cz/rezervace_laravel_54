@@ -1,0 +1,104 @@
+
+
+*{
+	text-align: center;
+}
+
+a:visited{
+	color: blue;
+}
+
+a{
+	margin-left: 3px;
+	margin-right: 3px;
+}
+.TrCLRadek1:hover{
+	background-color: #aaaaff;
+}
+
+td,th{
+	overflow: hidden;
+	text-overflow: clip;
+	white-space: nowrap;
+}
+
+body{
+	display: block;
+	width: 100%;
+	height: 100%;
+	margin: 0%;
+	padding: 0%;
+	left:5em;
+	right:5em;
+}
+
+table,thead,th,tbody,tr,td{
+	border: 0px solid black;
+	table-layout: fixed;
+	border-collapse:colapse;
+}
+
+table,tr{
+	width: 100%;
+	text-align: center;
+}
+
+table{
+	padding-left: 15%;
+	padding-right: 15%;
+}
+
+input{
+	width:90%;
+}
+
+.tab1{
+	padding-top: 4em;
+	height: 4em;
+	position: fixed;
+	background-color: white;
+}
+
+.tab2{
+	padding-top: 15em;
+}
+
+.SpIDerror1{
+	color: red;
+}
+
+td,th{
+	border-bottom: 1px solid black;
+	}
+
+
+/*
+{
+	display:table;
+	display:table-cell;
+	background-color:transparent;
+	border:0px solid #000000;
+	border-radius:0%;
+	font-weight:normal;
+	font-size:100%;
+	color:#000000;
+	text-align:left;
+	vertical-align:top;
+	float:none;
+	Box-sizing:content-box;
+	Box-sizing:border-box;
+	overflow:visible;
+	position:static;
+	left:auto;
+	right:auto;
+	top:auto;
+	bottom:auto;
+	width:auto;
+	height:auto;
+	margin:0px;
+	padding:0px;
+	table-layout:[auto,fixed]//vice respektu k sirce slupce
+	border-collapse:[separate,collapse]//ramecek
+	border-collapse:collapse;
+	}
+*/
